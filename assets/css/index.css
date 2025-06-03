@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'Tenada';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slideshow-wrapper {
+    max-width: 1200px;
+    margin: 50px auto 0 auto;
+    padding: 0 20px;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.card {
+    flex: 1 1 300px;
+    max-width: 300px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card-icon {
+    font-size: 40px;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Tenada';
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+}
+
+.stat-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+    gap: 20px;
+}
+
+.stat-card {
+    width: 200px;
+    min-height: 200px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-card .card-icon {
+    font-size: 40px;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.stat-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Tenada';
+    margin: 5px 0;
+}
+
+.stat-card p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    margin: 0;
+}
+
+.card:hover, .stat-card:hover {
+    transform: scale(1.05);
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin: 40px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .card-section, .stat-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card, .stat-card {
+        max-width: 100%;
+    }
+
+    .slideshow-wrapper {
+        padding: 0 10px;
+        margin: 30px auto 0 auto;
+    }
+
+    .mySlides img {
+        max-height: 300px;
+    }
+}

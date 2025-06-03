@@ -1,0 +1,174 @@
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.target_box {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.target_box .box {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.target_box .box i {
+    font-size: 40px;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.positions_box {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.positions_box .box {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 calc(25% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.positions_box .box i {
+    font-size: 40px;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.schedule_box {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: left;
+}
+
+.schedule-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.schedule-item .activity {
+    flex: 1;
+    font-weight: bold;
+}
+
+.schedule-item .date {
+    flex: 1;
+    text-align: right;
+}
+
+.apply-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-apply {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-apply:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.no-recruitment {
+    text-align: center;
+    color: #ff0000;
+    font-weight: bold;
+    padding: 1px;
+    background-color: #ffe5e5;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.faq-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.faq-answer {
+    margin-top: 10px;
+    display: none;
+}
+
+.faq-arrow {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+h3 {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .target_box .box,
+    .positions_box .box {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .schedule_box {
+        text-align: center;
+    }
+
+    .schedule-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .schedule-item .date {
+        text-align: center;
+    }
+}

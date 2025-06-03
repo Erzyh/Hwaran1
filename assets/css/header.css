@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 10000;
+}
+
+.logo {
+    height: auto;
+    max-width: 130px;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle i {
+    font-size: 30px;
+    color: #fff;
+}
+
+nav {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.8vh;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: aqua;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(51, 51, 51, 0.95);
+        z-index: 9999;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    nav.show {
+        transform: translateY(0%);
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+
+    nav ul li a {
+        font-size: 24px;
+    }
+
+    .menu-close {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .menu-close i {
+        font-size: 30px;
+        color: #fff;
+    }
+}
+
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    nav {
+        position: static;
+        display: block;
+        background-color: transparent;
+        height: auto;
+        transform: translateY(0%);
+        transition: none;
+
+        padding-right: 10vh;
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .menu-close {
+        display: none;
+    }
+
+    .logo-img {
+        padding-left: 10vh;
+    }
+}

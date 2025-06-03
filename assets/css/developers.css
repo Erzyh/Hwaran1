@@ -1,0 +1,105 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+}
+
+footer {
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.page-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.developer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.developer-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.developer-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.developer-name {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #007BFF;
+}
+
+.developer-gerne {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.developer-role {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+.developer-period {
+    font-size: 1rem;
+    color: #777;
+}
+
+.hover-role {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #0056b3;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.developer-card:hover .hover-role {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+}

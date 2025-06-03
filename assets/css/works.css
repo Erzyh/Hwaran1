@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@font-face {
+    font-family: 'Tenada';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f2f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Tenada', sans-serif;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.filter-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    background-color: #ffffff;
+    border: 2px solid #007BFF;
+    color: #007BFF;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background-color: #007BFF;
+    color: #ffffff;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-card h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.project-card p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+    height: 44px; /* 두 줄 높이 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box; 
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 768px) {
+    .project-card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-card {
+        width: 100%;
+    }
+
+    .filter-btn {
+        padding: 8px 16px;
+        margin: 3px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}

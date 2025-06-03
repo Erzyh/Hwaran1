@@ -1,0 +1,14 @@
+#applicationDetails h3 {
+    color: #4e73df;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+#applicationDetails p {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+#applicationDetails strong {
+    color: #4e73df;
+}

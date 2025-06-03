@@ -1,0 +1,274 @@
+.about-page * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about-page html {
+  scroll-behavior: smooth;
+}
+
+.about-page body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.about-page .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-page section {
+  margin-bottom: 60px;
+  padding: 40px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.about-page section:last-child {
+  border-bottom: none;
+}
+
+.about-page h1,
+.about-page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.about-page h1 {
+  font-size: 2.8rem;
+}
+
+.about-page h2 {
+  font-size: 2.2rem;
+  color: #007BFF;
+}
+
+.about-page p {
+  text-align: center;
+  font-size: 1.15rem;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.about-page .slider-container {
+  position: relative;
+  overflow: hidden;
+  margin: 30px auto;
+}
+
+.about-page .slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.about-page .slide {
+  min-width: 100%;
+  position: relative;
+}
+
+.about-page .slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.about-page .slide-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.about-page .slide-caption h3 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.about-page .slide-caption p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.about-page .slide-caption a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid #fff;
+}
+
+.about-page .slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.about-page .slider-btn.prev {
+  left: 10px;
+}
+
+.about-page .slider-btn.next {
+  right: 10px;
+}
+
+.about-page .team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.about-page .team-item {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.about-page .team-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.about-page .team-item h4 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.about-page .team-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.about-page #members {
+  padding: 40px 0;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.about-page #members h2 {
+  color: #007BFF;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.about-page .member-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.about-page .member-item {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-page .member-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-page .member-item img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.about-page .member-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+.about-page .member-item p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.8em;
+}
+
+.about-page .timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 20px;
+}
+
+.about-page .timeline:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #007BFF;
+}
+
+.about-page .timeline-item {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.about-page .timeline-item .date {
+  font-weight: 600;
+  color: #007BFF;
+  margin-bottom: 5px;
+}
+
+.about-page .timeline-item .desc {
+  font-size: 1rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .about-page h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-page h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-page p {
+    font-size: 1rem;
+  }
+
+  .about-page .slide img {
+    height: 300px;
+  }
+}
